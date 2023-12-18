@@ -1,5 +1,5 @@
 import React from 'react'
-import Order from '../components/order'
+import Order from '../components/Order'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
