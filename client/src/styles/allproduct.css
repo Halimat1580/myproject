@@ -1,0 +1,74 @@
+.allproduct-container {
+  padding: 6rem;
+}
+
+.allproduct-container h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.allproduct-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.products {
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.products-img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.products-img img {
+  width: 100%;
+}
+
+.food-desc {
+  color: #767575;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
+
+div.rating {
+  justify-content: space-between;
+}
+
+p.rating {
+  color: #ccc;
+}
+
+.icon {
+  font-size: 1.1rem;
+  color: #ccc;
+  /* margin-block: 1rem; */
+}
+
+.ingredient-img img {
+  width: 1.3rem;
+  margin-block: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.naira {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+
+
+@media screen and (max-width: 450px) {
+    .allproduct-container {
+        padding: 2rem;
+    }
+    .allproduct-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,249 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 6rem;
+}
+
+.logo-wrapper {
+  align-items: center;
+  gap: 2rem;
+}
+
+.location {
+  font-size: 1.5rem;
+}
+
+.user-info {
+  gap: 2rem;
+}
+
+.user-info p {
+  font-size: 1.125rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.guest {
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.dish {
+  font-size: 2rem;
+}
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.bag {
+  position: relative;
+}
+
+.order-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0rem 0.3rem;
+  color: #fff;
+  font-size: 0.875rem;
+  background-color: rgba(163, 15, 15, 0.86);
+  border-radius: 50%;
+  
+}
+
+.hero-img {
+  margin-block: 0 2rem;
+  width: 100%;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.about {
+  gap: 1rem;
+  text-align: center;
+}
+
+.listing-wrapper {
+  padding: 0 6rem 3rem;
+}
+
+.over {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.below {
+  font-size: 2rem;
+  color: var(--primary);
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+
+.folder {
+  color: var(--primary);
+  font-size: 2.4rem;
+}
+
+.lock {
+  font-size: 1.4rem;
+  color: var(--primary);
+  position: relative;
+  right: 1.3rem;
+
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  background-color: var(--secondary);
+}
+
+.footer-icons {
+  position: relative;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: var(--secondary);
+  color: white;
+  padding: 1rem 7rem;
+}
+
+.specifications {
+  justify-content: space-between;
+}
+
+.app-download {
+  gap: 1rem;
+}
+
+.app-download p {
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5919rem;
+}
+
+.applestore,
+.playstore {
+    border-radius: 0.30088rem;
+    border: 0.481px solid #FFF;
+  padding: 0.3rem 0.6rem;
+}
+
+.app-download span {
+  font-size: 2rem;
+}
+
+.app-download img {
+  padding: 0.4rem;
+}
+
+.footer-container h3 {
+  padding-block: 3rem 1rem;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: underline;
+  line-height: 3;
+}
+
+.social {
+  gap: 0.5rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: hsla(0, 1%, 72%, 1);
+  padding: 0.1rem;
+  border: 1px solid hsla(0, 1%, 72%, 1);
+}
+
+.social-icon:hover {
+    color: var(--primary);
+    transform: rotate(10deg);
+    
+    border-color: var(--primary);
+}
+
+.credentials {
+  width: 100%;
+  color: var(--secondary);
+  background-color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 0.5rem 2rem;
+  }
+
+  .user-info {
+    gap: 0.5rem;
+  }
+   
+.location,
+  .guest span,
+  .all-products span {
+    display: none;
+  }
+
+  .tasty-img {
+    display: none;
+  }
+
+  .icons {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+  .specifications,
+  .app-download,
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .support,
+  .secured {
+    flex-direction: column;
+  }
+
+  .support {
+    gap: 1rem;
+  }
+
+  .footer-container {
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .app-download p{
+    font-size: 0.76688rem;
+    text-align: left;
+  }
+
+  .app-download img {
+    width: 1.9469rem;
+  }
+
+  .app-download span {
+    font-size: 0.97744rem;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}

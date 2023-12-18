@@ -1,0 +1,31 @@
+.home-container {
+  padding: 0 6rem 3rem;
+}
+
+.counter {
+  /* gap: 1rem; */
+  border-radius: 0.3125rem;
+  background: rgba(225, 186, 186, 0.75);
+  width: 7.68906rem;
+  padding: 0.2rem 0.3125rem;
+  align-items: center;
+  gap: 1.5625rem;
+  justify-content: space-evenly;
+  color: var(--secondary);
+  font-size: 1.4375rem;
+  font-weight: 400;
+}
+
+.counter button {
+    color: var(--primary);
+    background-color: hsla(0, 0%, 100%, 0.63);
+    padding: 0.4rem;
+    border-radius: 0.3125rem;
+}
+
+@media screen and (max-width: 450px) {
+    .home-container {
+        padding-inline: 2rem;
+    }
+}
+

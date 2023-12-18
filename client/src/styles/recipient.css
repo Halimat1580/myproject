@@ -1,0 +1,97 @@
+.recipient-wrapper {
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+
+.recipient-wrapper h2 {
+  text-align: center;
+}
+
+.recipient-wrapper form {
+  padding: 1rem;
+}
+
+.update-form {
+  border-radius: 0.675rem;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.recipient-wrapper .receipt {
+  width: 25rem;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  border: 1px solid rgba(170, 170, 170, 0.4);
+  background: #fff;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.subtotal {
+  border-bottom: 1px solid rgba(170, 170, 170, 0.4);
+  padding: 1rem 0;
+}
+
+.recipient-wrapper .total {
+  padding: 1rem 0;
+}
+
+.update {
+  width: 100%;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 0.625rem;
+  margin-block: 1rem;
+}
+
+/* Address  */
+
+.address-wrapper {
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.address-wrapper h2 {
+  text-align: center;
+}
+
+.address-form {
+  border-radius: 0.625rem;
+  border: 1px solid rgba(170, 170, 170, 0.4);
+    padding: 1rem;
+  background: #fff;
+
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 450px) {
+  .recipient-wrapper {
+    flex-direction: column;
+    padding: 2rem 0.7rem;
+    gap: 0;
+  }
+
+  .update-form,
+  .recipient-wrapper .receipt {
+    background-color: #f9f2f2;
+  }
+
+  .recipient-wrapper .receipt {
+    box-shadow: 3px 11px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+  }
+
+  .address-wrapper {
+    padding: 2rem 0.6rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .address-form {
+    box-shadow: 3px 11px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3125rem;
+    background-color: #f9f2f2;
+  }
+}

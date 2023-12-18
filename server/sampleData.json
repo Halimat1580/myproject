@@ -1,0 +1,44 @@
+[
+    {"title":"Double Beef Burger",
+    "description":"marinated in an aromatic mixture of olive oil, garlic, lemon and spices that wakes you up once you take a bite!",
+    "image":"https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/d71a438753a50f8a11f9cf1f42681137/detailed",
+    "category": "hamburger",
+    "price": 10500
+},
+{
+    "title": "Single Beef Burger",
+    "description": "Our Single Beef Burger Is Prepared With The Best Quality Of Jazzy® buns and beef That Gives A Great Taste And Texture plus our beef patty is marinated in an aromatic mixture of olive oil, garlic, lemon and spices that wakes you up once you take a bite!",
+    "image": "https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/aa7930094547a5a5c1d928033d337a96/detailed",
+    "category": "hambuger",
+    "price": 8500
+},
+{
+    "title": "Double Crunchy Chicken Burger",
+    "description": "Our Double crunchy chicken burgers are ultra crispy and absolutely bursting with flavour topped with fresh lettuce , cucumbers ,Onions , our special sauce and cheese! Its an absolute crowd pleaser",
+    "image": "https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/50fa53f1759e55e978055355514a2eeb/detailed",
+    "category": "hambuger",
+    "price": 13500
+},
+{
+    "title": "Breakfast Burger",
+    "description": "Our Breakfast burgers are absolutely bursting with flavour topped with fresh lettuce , cucumbers ,Onions",
+    "image": "https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/83dbc5d30b730032838715b7a257af58/detailed",
+    "category": "hambuger",
+    "price": 9000
+},
+{
+    "title": "Grilled Chicken Burger",
+      "description": "Our Single Patty Grilled Chicken Burger with cheese, tomato, cucumber, lettuce and caramelized onions, Topped with lettuce, tomatoes, cheese and spicy mayo, they are the most delicious, easy dinner and a guaranteed crowd pleaser",
+      "image": "https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/bd28d915625889cf81f793f464340c17/detailed",
+      "category": "hambuger",
+      "price": 11000
+
+},
+{
+    "title": "Double Grilled Chicken Burger",
+    "description": "A Double Patty Grilled Chicken Burger with cheese, tomato, cucumber, lettuce and caramelized onions, Topped with lettuce, tomatoes, cheese and spicy mayo, they are the most delicious, easy dinner and a guaranteed crowd pleaser. Unlike ground chicken burgers that require chicken patties made with ground chicken (or ground turkey)",
+    "image": "https://res-console.cloudinary.com/djuqnzxl1/media_explorer_thumbnails/be72afca6cb1c30dece188d026f3a439/detailed",
+    "category": "hamburger",
+    "price": 11000
+}
+]
