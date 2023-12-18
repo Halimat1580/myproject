@@ -35,7 +35,7 @@ const NavBar = () => {
 
         <div className='flex user-info'>
         <Link to= '/allproducts'><p className='text-primary all-products flex'><MdRoomService className='dish'/> <span>All Products </span></p></Link>
-        <p className='guest flex' onClick={displayGuest}><IoPersonOutline className='icons'/> <span>Hi, Guests </span> <MdOutlineArrowForwardIos className='arrow'/></p>
+        <p className='guest flex'  onClick={displayGuest}><IoPersonOutline className='icons'/> <span>Hi, Guests </span> <MdOutlineArrowForwardIos className='arrow'/></p>
 
         <p className='flex bag' onClick={displayCheckout}><MdOutlineShoppingBag className='text-primary icons'/><span className='order-num'>0</span></p>
         </div>

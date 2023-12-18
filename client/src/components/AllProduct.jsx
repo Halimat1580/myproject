@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/allproduct.css";
 import FoodImg from "../assets/food.svg";
 import CheeseImg from "../assets/cheese.svg";
@@ -10,6 +10,19 @@ import { FaRegStar } from "react-icons/fa6";
 import { FaRegHeart, FaPlus } from "react-icons/fa";
 
 const AllProduct = () => {
+  const [data, setdata] = useState([])
+
+  const getData = async ()=>{
+    try {
+      let data = await fetch('http://localhost:5757/api/products');
+      let response = await data.json();
+      setdata(response.products)
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="allproduct-container">
       <h2>Most popular near you</h2>
