@@ -5,9 +5,9 @@ import Listing from '../components/Listing'
 import Footer from '../components/Footer'
 
 const HomePage = () => {
-  useEffect(()=>{
-    document.title = HomePage || Page
-  })
+  // useEffect(()=>{
+  //   document.title = HomePage || Page
+  // })
 
   return (
     <div>
