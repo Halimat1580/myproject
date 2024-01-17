@@ -44,4 +44,6 @@
   border-radius: 0.425rem;
   border: 1px solid var(--primary);
   color: var(--primary);
+  text-decoration: blue;
+  
 }

@@ -15,7 +15,7 @@ router.get('/isloggedin',isLoggedIn)
 //forgotpassword
 router.post('/forgotpassword',forgotPassword)
 //resetpassword
-router.put('/resetpassword/:resetToken',auth,resetPassword)
+router.put('/resetpassword/:resetToken',resetPassword)
 
 
 

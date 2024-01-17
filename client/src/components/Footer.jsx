@@ -76,7 +76,7 @@ const Footer = () => {
       
     </div>
     <div className="credentials">
-        <p>&copy; Limmy <LuDot /> Developed by our Digital  LLC
+        <p>&copy; JJB Concepts <LuDot /> Developed by our Digital  LLC
 
         </p>
       </div>

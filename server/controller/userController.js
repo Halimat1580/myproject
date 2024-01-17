@@ -142,27 +142,29 @@ const isLoggedIn = (req, res) => {
 
   // reset password ftn
 const resetPassword = async (req,res)=>{
-    const resetPasswordToken = crypto.createHash("sha256").update(req.params.resetToken).digest("hex");
-    try {
-      const user = await USER.findOne({
-        resetPasswordToken,
-        resetPasswordExpire:{$gt:Date.now()}
-      })
-      if(!user){
-        return res.status(400).json({status:false,message:"invalid Reset Token"})
-      }
-      user.password = req.body.password;
-      user.resetPasswordToken = undefined;
-      user.resetPasswordExpire = undefined;
-  
-      await user.save();
-      res.status(201).json({success:true,message:"Password Reset Successfull"})
-      
-    } catch (error) {
-      res.status(500).json(error.message)
-      
-    }
+  const resetPasswordToken = crypto.createHash("sha256").update(req.params.resetToken).digest("hex");
+  try {
+    const user = await USER.findOne({
+      resetPasswordToken,
+      resetPasswordExpire:{$gt:Date.now()}
+      // resetPasswordExpire:{$gt:Date('2024-12-20')}
+
+    })
+    if(!user){
+      return res.status(400).json({status:false,message:"invalid Reset Token"})
+    }
+    user.password = req.body.password;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+
+    await user.save();
+    res.status(201).json({success:true,message:"Password Reset Successfull"})
+    
+  } catch (error) {
+    res.status(500).json(error.message)
+    
   }
+}
 
 module.exports = {
     registration,

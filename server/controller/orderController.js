@@ -16,7 +16,7 @@ const order = async (req,res)=>{
     }
     try {
         const order = await orderModel.create({...req.body});
-        res.status(201).json({success:true,message:"order created successfully", order})
+        res.status(201).json({success:true,message:"order created successfully", order}) 
     } catch (error) {
         res.status(500).json(error.message)
         

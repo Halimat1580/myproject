@@ -3,7 +3,7 @@ import Receipt from './Receipt'
 
 const Address = () => {
   return (
-    <div className="address-wrapper flex">
+    <div className=" address-wrapper flex ">
         <div className="address-form">
             <h2>Add Address</h2>
 

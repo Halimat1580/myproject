@@ -3,13 +3,13 @@
 }
 
 .counter {
-  /* gap: 1rem; */
+  gap: 1rem;
   border-radius: 0.3125rem;
   background: rgba(225, 186, 186, 0.75);
   width: 7.68906rem;
   padding: 0.2rem 0.3125rem;
-  align-items: center;
-  gap: 1.5625rem;
+  align-items: center; 
+   gap: 1.5625rem;
   justify-content: space-evenly;
   color: var(--secondary);
   font-size: 1.4375rem;
@@ -19,7 +19,6 @@
 .counter button {
     color: var(--primary);
     background-color: hsla(0, 0%, 100%, 0.63);
-    padding: 0.4rem;
     border-radius: 0.3125rem;
 }
 

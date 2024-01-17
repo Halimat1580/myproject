@@ -7,8 +7,8 @@ import { RxEnter } from "react-icons/rx";
 const Guest = () => {
   return (
     <div className='guest-wrapper'>
-        <Link to= '/login'><button className='login'><RxEnter /> Login In</button></Link>
-       <Link to='/signup'><button className='signup'><TbBellSchool /> Sign Up</button></Link> 
+        <Link to= '/login' className='text-decoration-none'><button className='login'><RxEnter /> Login In</button></Link>
+       <Link to='/signup' className='text-decoration-none'><button className='signup'><TbBellSchool /> Sign Up</button></Link> 
     </div>
   )
 }

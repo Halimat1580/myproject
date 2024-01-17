@@ -26,9 +26,9 @@
     display: flex;
 }
 
-.text-primary {
+/* .text-primary {
     color: var(--primary);
-}
+} */
 
 body {
     font-weight: 600;

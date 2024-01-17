@@ -1,46 +1,71 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaRegTrashAlt,FaPlus, FaMinus } from "react-icons/fa";
+import CartContext from './context/CartContext';
+import '../styles/receipt.css'
+import binPic from '../assets/binPic.svg'
 
 const Receipt = () => {
+  const {cart, handleIncrease,
+    handleDecrease,
+    totalPrice,
+    removeItem} = useContext(CartContext)
   return (
-    <div>
-        <div className="order-wrapper">
-        <h3>Your Order form</h3>
+    <div className=''>
+           <section className='col-lg-5 border border-3 rounded p-4 w-100 '>
+            <h5>Your order form</h5>
+            {cart.length === 0 && <><h2>No items </h2> </>}
+            <hr />
+            {cart.map((cartItem) => {
+              const { quantity, title, price, _id } = cartItem;
+              return (
+                <div
+                  className="row justify-content-between align-items-center "
+                  key={_id}
+                >
+                  {/* <hr /> */}
 
-        <div className="items">
-          <div className="flex product">
-            <p className="productname">Double Grilled Chicken Burger</p>
-            <button className="delete"><FaRegTrashAlt /></button>
-            <p>N 12000</p>
+                  <div className='col-5  '>
+                  <h2 className="fs-6 text-danger"> {title}... </h2>
+                  <p className="">  </p>
+                  <div className='bg-secondary w-100 '>
+                    <button className="btn btn-lg" onClick={()=>handleIncrease(cartItem)}>
+                      +
+                    </button>
+                    {quantity}
+                    <button className="btn btn-lg" onClick={()=>handleDecrease(cartItem)}>
+                      -
+                    </button>
+                  </div>
+                  </div>
+                  <p className="col-4">
+                    
+                    
+                   <div className="d-flex gap-3">
+                   <span role="button" onClick={() => removeItem(_id)}>
+                     <img src={binPic} alt="" />
+                    </span>
+                    {price}
+                   </div>
+                  </p>
+                  {/* <div className=''>
+                        </div> */}
+                </div>
+              );
+            })}
+             <div>
+            {totalPrice === 0 ? (
+              ""
+            ) : (
+              <div className="d-flex justify-content-between">
+                <p> Items Subtotal </p>
+                  <p># {totalPrice} </p>
+                {/* <div>
+                </div> */}
+              </div>
+            )}
+            <hr />
           </div>
-
-          <div className="flex counter">
-            <button><FaMinus /></button>
-            <p>1</p>
-            <button><FaPlus /></button>
-          </div>
-        </div>
-
-        <div className="receipt">
-          <div className="item-total flex">
-            <p>Item Total :</p>
-            <p>N 12000</p>
-          </div>
-          <div className="item-total flex">
-            <p>Discount :</p>
-            <p>N 0</p>
-          </div>
-          <div className="item-total flex">
-            <p>Delivery Charge:</p>
-            <p>N 0</p>
-          </div>
-        </div>
-
-        <div className="flex total">
-          <p>Total: </p>
-          <p>N 12000</p>
-        </div>
-      </div>
+        </section>
     </div>
   )
 }
