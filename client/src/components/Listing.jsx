@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "../styles/listing.css";
+
 import TastyImg from "../assets/tasty.svg";
 import FoodImg from "../assets/food.svg";
 import CheeseImg from "../assets/cheese.svg";
@@ -58,7 +59,7 @@ const Listing = () => {
               return (
                 <div id="items">
                   <div key={_id} className="allproduct-cart" >
-                    <img src={image} alt="" />
+                    <img src={image} alt="title" className="img-fluid"/>
                     <h6> {title} </h6>
                     <p>{description.slice(0, 50)}</p>
                     <p>Ingredients:</p>

@@ -51,7 +51,7 @@ const AllProduct = () => {
     <div className="allproduct-cart">
       
       <div key={_id} >
-      <img src={image} alt="" />
+      <img src={image} alt="title" />
       <h6 > {title} </h6>
       <h5 className="heading-5">{description.slice(0,50)}</h5>
       <p>Ingredients:</p>

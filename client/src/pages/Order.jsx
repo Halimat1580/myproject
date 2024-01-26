@@ -63,7 +63,7 @@ const Order = () => {
           return (
             <div key={_id}>
               <h2> {title} </h2>
-              <img src={image} alt="" />
+              <img src={image} alt="image" />
               <p> {description} </p>
               <p> {price} </p>
               <p> {quantity} </p>
