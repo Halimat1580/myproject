@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import "../styles/listing.css";
 
+
 import TastyImg from "../assets/tasty.svg";
 import FoodImg from "../assets/food.svg";
 import CheeseImg from "../assets/cheese.svg";
@@ -14,6 +15,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Listing = () => {
   const { handleAddToCart } = useContext(CartContext);
+  
 
   const notify = () => {
     toast("An item has been added", {
@@ -33,7 +35,8 @@ const Listing = () => {
 
   const getData = async () => {
     try {
-      let data = await fetch("http://localhost:5757/api/products");
+      let data =await fetch("http://localhost:5757/api/products " );
+
       let response = await data.json();
       setData(response.products);
       console.log(response);
@@ -43,6 +46,7 @@ const Listing = () => {
   };
 
   useEffect(() => {
+    
     getData();
   }, []);
 
@@ -53,9 +57,12 @@ const Listing = () => {
           <img src={TastyImg} alt="TastyImg" className="img1" />
           
 
-          <div className="foods-wrapper">
+          <div  className="foods-wrapper">
             {data.map((datum) => {
               const { title, _id, image, price, description } = datum;
+             
+          
+              
               return (
                 <div id="items">
                   <div key={_id} className="allproduct-cart" >
